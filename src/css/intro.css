@@ -1,0 +1,13 @@
+.backgroundImg{
+  background-image: url('../images/pexels-photo-414491.jpeg');
+  background-size: cover;
+  height: auto;
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* phone */
+@media only screen and (max-width: 480px){
+
+}
