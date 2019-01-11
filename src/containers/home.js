@@ -6,6 +6,7 @@ const PortfolioContainer = () => {
   return(
     <div>
       <Header />
+      <About />
       <PortfolioCard />
     </div>
   )

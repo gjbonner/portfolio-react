@@ -12,3 +12,13 @@
   font-size: 200%;
   font-family: Raleway, sans-serif;
 }
+
+.navItem{
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 150%;
+}
+
+.navItem:hover{
+
+}
