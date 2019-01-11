@@ -7,22 +7,41 @@
   min-height: 100%;
   min-width: 100%;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .hello{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
   font-family: Raleway, sans-serif;
   font-weight: 100;
   color: #2F4F4F;
   font-size: 400%;
+  text-align: center;
+}
+
+.align{
+  text-align: center;
 }
 
 .enter{
-  
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid #008080;
+  font-size: 175%;
+  color: #2F4F4F;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.enter:hover{
+  color:white;
+  transition: 0.7s;
 }
 
 /* phone */
