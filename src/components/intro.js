@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap'
 import '../css/intro.css'
 import '../css/animate.css'
+import { Link } from 'react-router-dom'
 const Intro = () => {
-
-  const HandleClick = () => {
-    console.log('clicked')
-  }
   return(
     <div>
       <div className='backgroundImg'>
         <div className='introContainer animated bounceInUp'>
           <h1 className='hello'>Hi, I'm Giles Bonner</h1>
-          <h3 className='align'><button onClick={HandleClick} className='enter'>enter</button></h3>
+          <h3 className='align'><Link to='/home'><button className='enter'>enter</button></Link></h3>
         </div>
       </div>
     </div>

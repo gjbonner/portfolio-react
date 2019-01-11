@@ -46,5 +46,11 @@
 
 /* phone */
 @media only screen and (max-width: 480px){
+    .enter{
+      font-size: 100%;
+    }
 
+    .hello{
+      font-size: 300%;
+    }
 }
