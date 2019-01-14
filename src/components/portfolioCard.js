@@ -1,8 +1,11 @@
 import React from 'react'
-
+import {Grid, Image, Row, Col} from 'react-bootstrap'
 const PortfolioCard = () => {
   return (
-    <h1>Portfolio Card</h1>
+    <div>
+    <h1>Portfolio</h1>
+      
+    </div>
   )
 }
 
