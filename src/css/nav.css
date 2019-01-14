@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
 .nav{
+  background: #12AFFE;
+  border: transparent;
   border-radius: 0px;
   display: flex;
   flex-direction: row;
@@ -20,5 +22,6 @@
 }
 
 .navItem:hover{
-
+  text-decoration: none;
+  transition-duration: 0.5s;
 }

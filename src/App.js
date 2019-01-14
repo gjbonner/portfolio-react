@@ -5,6 +5,8 @@ import { withRouter, Route, Switch, Redirect } from 'react-router-dom'
 import PortfolioContainer from './containers/portfolioContainer'
 import Home from './containers/home'
 class App extends Component {
+
+
   render() {
     return (
       <Fragment>

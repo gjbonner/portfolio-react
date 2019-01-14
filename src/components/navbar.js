@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { withRouter, Route, Switch, Redirect, Link } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import { Navbar, NavItem, Nav } from 'react-bootstrap'
 import '../css/nav.css'
 const Header = () => {
