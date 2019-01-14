@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Header from '../components/navbar'
-import PortfolioCard from '../components/portfolioCard'
+import PortfolioContainer from '../containers/portfolioContainer'
 import About from '../components/about'
 import '../css/home.css'
-const PortfolioContainer = () => {
+const Home = () => {
   return(
     <div>
     <Header />
@@ -11,10 +11,10 @@ const PortfolioContainer = () => {
       <About />
     </div>
     <div className='wrapper'>
-      <PortfolioCard />
-    </div>
+
+      </div>
     </div>
   )
 }
 
-export default PortfolioContainer
+export default Home

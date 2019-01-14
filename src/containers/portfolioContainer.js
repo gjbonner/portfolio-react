@@ -7,7 +7,7 @@ const PortfolioContainer = () => {
     <div>
       <Header />
       <div className='wrapper'>
-        <PortfolioCard />
+      <PortfolioCard />
       </div>
     </div>
   )

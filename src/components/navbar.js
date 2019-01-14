@@ -13,6 +13,9 @@ const Header = () => {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem>
+              <Link to='/home' className='navItem'>Home</Link>
+            </NavItem>
+            <NavItem>
               <Link to='/portfolio' className='navItem'>Portfolio</Link>
             </NavItem>
             <NavItem>

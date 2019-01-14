@@ -4,9 +4,6 @@
   background: #12AFFE;
   border: transparent;
   border-radius: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .nav .name{
