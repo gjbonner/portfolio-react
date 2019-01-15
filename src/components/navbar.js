@@ -5,9 +5,8 @@ import '../css/nav.css'
 const Header = () => {
   return(
     <div>
-      <Navbar className="nav" inverse collapseOnSelect>
+      <Navbar className="nav" collapseOnSelect>
         <Navbar.Header>
-            <Navbar.Brand className='name'><Link to='/home'>Giles Bonner</Link></Navbar.Brand>
           <Navbar.Toggle/>
         </Navbar.Header>
         <Navbar.Collapse>

@@ -5,8 +5,9 @@
 }
 
 li{
+
   margin: 20px;
-  margin-bottom: 0px;
+  list-style-type: none;
 }
 
 .footer .footerIcons{
@@ -26,6 +27,16 @@ li{
   font-size: 100%;
 }
 
-.heart{
+.heart {
   color: red;
+}
+
+.icons {
+  color: white;
+  font-size: 175%;
+}
+
+.icons:hover{
+  color: black;
+  transition: 0.75s;
 }

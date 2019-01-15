@@ -5,9 +5,10 @@ const Footer = () => {
     <div>
       <div className='footer'>
         <ul className='footerIcons'>
-          <li>hello</li>
-          <li>testing</li>
-          <li>footer</li>
+          <li><a href='https://github.com/gjbonner'><i class="icons fab fa-github"></i></a></li>
+          <li></li>
+          <li><a href='https://www.linkedin.com/in/giles-bonner-b74babb9/'><i class="icons fab fa-linkedin-in"></i></a></li>
+          <li></li>
         </ul>
       </div>
       <div className='made'>

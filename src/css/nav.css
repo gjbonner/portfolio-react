@@ -6,15 +6,6 @@
   border-radius: 0px;
 }
 
-.nav .name{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-size: 200%;
-  font-family: Raleway, sans-serif;
-}
-
 .navItem{
   color: white;
   font-family: Raleway, sans-serif;
@@ -23,7 +14,6 @@
 
 .navItem:hover{
   text-decoration: none;
-  transition-duration: 0.5s;
 }
 
 .navItem:before{
@@ -45,10 +35,4 @@
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
-
-@media only screen and (max-width: 800px) {
-  .nav .name {
-    font-size: 100%;
-  }
 }
