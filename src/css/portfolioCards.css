@@ -1,0 +1,16 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #F1F6F8;
+  width: auto;
+  height: auto;
+}

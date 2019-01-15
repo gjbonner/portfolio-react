@@ -1,14 +1,16 @@
 import React from 'react'
 import Header from '../components/navbar'
-import PortfolioCard from '../components/portfolioCard'
+import PortfolioCards from '../components/portfolioCard'
 import About from '../components/about'
+import Footer from '../components/footer'
 const PortfolioContainer = () => {
   return(
     <div>
       <Header />
       <div className='wrapper'>
-      <PortfolioCard />
+      <PortfolioCards />
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -1,12 +1,32 @@
 import React from 'react'
 import {Grid, Image, Row, Col} from 'react-bootstrap'
-const PortfolioCard = () => {
+import '../css/portfolioCards.css'
+const PortfolioCards = () => {
   return (
     <div>
-    <h1>Portfolio</h1>
-      
+      <h1>Portfolio</h1>
+    <div className='cards'>
+    <div className='card'>
+      <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
     </div>
+    <div className='card'>
+      <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
+    </div>
+    <div className='card'>
+      <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
+    </div>
+    <div className='card'>
+      <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
+    </div>
+    <div className='card'>
+      <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
+    </div>
+    <div className='card'>
+      <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
+    </div>
+    </div>
+  </div>
   )
 }
 
-export default PortfolioCard
+export default PortfolioCards
