@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <Navbar className="nav" inverse collapseOnSelect>
         <Navbar.Header>
-          <Navbar.Brand  className='name'><Link to='/home'>Giles Bonner</Link></Navbar.Brand>
+            <Navbar.Brand className='name'><Link to='/home'>Giles Bonner</Link></Navbar.Brand>
           <Navbar.Toggle/>
         </Navbar.Header>
         <Navbar.Collapse>
