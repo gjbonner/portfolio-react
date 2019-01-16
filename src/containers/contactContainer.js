@@ -4,14 +4,17 @@ import Footer from '../components/footer'
 import '../css/home.css'
 import '../css/contact.css'
 import * as emailjs from 'emailjs-com'
-import { Form, FormGroup, FormControl, Button, ControlLabel } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { Form, FormGroup, FormControl, Button, ControlLabel, Modal } from 'react-bootstrap'
 class ContactContainer extends Component{
   constructor(props){
     super(props)
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      fireError: false,
+      emailSent: false
     }
   }
 
@@ -27,7 +30,7 @@ class ContactContainer extends Component{
    handleClick = (e) => {
     e.preventDefault()
     if(this.state.name === '' || this.state.email === '' || this.state.message === '' || this.state.email.includes('@') === false){
-      alert('fill em in')
+      this.setState({fireError: true})
     } else {
       let template_params = {
         "reply_to": `${this.state.email}`,
@@ -42,8 +45,15 @@ class ContactContainer extends Component{
       emailjs.send(service_id, template_id, template_params, userID)
       .then(r => {
         console.log('sent', r.text);
-      })
+      }).then(this.setState({emailSent: true}))
     }
+  }
+
+  closeModal = () => {
+    this.setState({
+      fireError: false,
+      emailSent: false
+    })
   }
 
   render(){
@@ -82,8 +92,33 @@ class ContactContainer extends Component{
             </FormGroup>
             <p id='btn'><Button id='submit' onClick={this.handleClick} type='submit'>Submit</Button></p>
           </Form>
+
+          {this.state.fireError ?
+            <div className='static-modal'>
+              <Modal.Dialog>
+                <Modal.Header><Modal.Title>Oops!</Modal.Title></Modal.Header>
+                <Modal.Body>Please make sure you fill in all fields and that your email is valid...</Modal.Body>
+                <Modal.Footer>
+                  <Button onClick={this.closeModal}>Ok</Button>
+                </Modal.Footer>
+              </Modal.Dialog>
+
+            </div>
+
+            : ''}
+            {this.state.emailSent ?
+              <div className='static-modal'>
+                <Modal.Dialog>
+                  <Modal.Header><Modal.Title>Email Sent!</Modal.Title></Modal.Header>
+                  <Modal.Body>I will be sure to reply as soon as I can!</Modal.Body>
+                  <Modal.Footer>
+                    <Button onClick={this.sentEmail}>Ok</Button>
+                  </Modal.Footer>
+                </Modal.Dialog>
+              </div>
+            : ''}
         </div>
-        </div>
+      </div>
       <Footer/>
     </div>
     )

@@ -3,6 +3,7 @@ import '../css/about.css'
 const About = () => {
   return(
     <div>
+      <img id='robot' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547677073/robot.png' alt='robot' />
       <h1>About Me</h1>
       <p>I’m a Full Stack developer with a passion for building easy to use, state of the art websites and applications implementing
        clean and efficient code. With experience in Ruby on Rails, JavaScript, and React and a background in data analytics,
