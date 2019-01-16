@@ -4,6 +4,12 @@
   margin-bottom: 20px;
 }
 
+.contactImg{
+  display: flex;
+  margin: 0 auto;
+  height: 300px;
+  width: 500px;
+}
 #msg {
   width: 50%;
   margin: 0 auto;
@@ -22,4 +28,10 @@
 #btn {
   margin-top: 20px;
   text-align: center;
+}
+
+@media only screen and (max-width: 400px){
+  .contactImg{
+    display: none;
+  }
 }

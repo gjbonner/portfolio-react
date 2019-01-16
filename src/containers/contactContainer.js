@@ -3,7 +3,7 @@ import Header from '../components/navbar'
 import Footer from '../components/footer'
 import '../css/home.css'
 import '../css/contact.css'
-import axios from 'axios'
+import * as emailjs from 'emailjs-com'
 import { Form, FormGroup, FormControl, Button, ControlLabel } from 'react-bootstrap'
 class ContactContainer extends Component{
   constructor(props){
@@ -24,19 +24,36 @@ class ContactContainer extends Component{
     }))
   }
 
-  handleClick = (e) => {
+   handleClick = (e) => {
     e.preventDefault()
-    const {name, email, message} = this.state
-    console.log(this.state)
+    if(this.state.name === '' || this.state.email === '' || this.state.message === '' || this.state.email.includes('@') === false){
+      alert('fill em in')
+    } else {
+      let template_params = {
+        "reply_to": `${this.state.email}`,
+        "from_name": `${this.state.name}`,
+        "to_name": `Giles`,
+        "message_html": `${this.state.message}`
+      }
+      const service_id = 'gmail'
+      const userID = 'user_xgDxlg4jdLHC8rRo6ZGaF'
+      const template_id = 'template_ZwW9Fl5K'
+
+      emailjs.send(service_id, template_id, template_params, userID)
+      .then(r => {
+        console.log('sent', r.text);
+      })
+    }
   }
 
   render(){
     return(
     <div>
       <Header />
-        <div className='wrapper'>
+        <div className='contactWrapper'>
+        <img className='contactImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547674140/hackathon.png' />
         <div>
-          <h1>Want to work together?<br/>Lets get in touch.</h1>
+          <h1>I'm always looking for fun project to be a part of!<br/> Want to work together?<br/>Lets get in touch.</h1>
           <Form>
             <FormGroup id='name'>
               <ControlLabel>Enter Name</ControlLabel>
@@ -67,7 +84,7 @@ class ContactContainer extends Component{
           </Form>
         </div>
         </div>
-      <Footer />
+      <Footer/>
     </div>
     )
   }
