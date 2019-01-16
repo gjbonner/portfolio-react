@@ -112,7 +112,7 @@ class ContactContainer extends Component{
                   <Modal.Header><Modal.Title>Email Sent!</Modal.Title></Modal.Header>
                   <Modal.Body>I will be sure to reply as soon as I can!</Modal.Body>
                   <Modal.Footer>
-                    <Button onClick={this.sentEmail}>Ok</Button>
+                    <Button onClick={this.closeModal}>Ok</Button>
                   </Modal.Footer>
                 </Modal.Dialog>
               </div>
