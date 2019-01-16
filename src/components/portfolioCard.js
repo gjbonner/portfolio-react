@@ -6,7 +6,7 @@ const PortfolioCards = () => {
       <h1>Portfolio</h1>
     <div className='cards'>
     <div className='card'>
-      <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
+      <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547654275/whatToMake.png'/>
     </div>
     <div className='card'>
       <img src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547572156/imageedit_3_3205548450.png'/>
