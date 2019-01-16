@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../components/navbar'
-import PortfolioContainer from '../containers/portfolioContainer'
+import PortfolioCards from '../components/portfolioCard'
 import About from '../components/about'
 import Footer from '../components/footer'
 import '../css/home.css'
@@ -12,7 +12,7 @@ const Home = () => {
       <About />
     </div>
     <div className='wrapper'>
-
+      <PortfolioCards />
       </div>
       <Footer />
     </div>

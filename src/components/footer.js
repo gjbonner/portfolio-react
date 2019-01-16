@@ -9,6 +9,8 @@ const Footer = () => {
           <li></li>
           <li><a href='https://www.linkedin.com/in/giles-bonner-b74babb9/'><i class="icons fab fa-linkedin-in"></i></a></li>
           <li></li>
+          <li><a href='https://www.youtube.com/channel/UCKDzi2Y_ZqIyfkwiD6xVgzQ'><i class="icons fab fa-youtube"></i></a></li>
+          <li></li>
         </ul>
       </div>
       <div className='made'>
