@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -11,15 +13,53 @@
   border-radius: 5px;
   margin: 0 auto;
   margin-bottom: 20px;
-  background-color: #F1F6F8;
+  background-color: transparent;
   width: 350px;
   height: 350px;
+  perspective: 1000px;
 }
 
-.cardImg{
+.cardImg {
   border-radius: 5px;
   display: block;
   height: 90%;
   width: 90%;
   margin: 0 auto;
+}
+
+.appName {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+.cardFront, .cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.cardFront {
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  color: black
+}
+
+.cardBack {
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  transform: rotateY(180deg);
 }
