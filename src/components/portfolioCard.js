@@ -68,22 +68,14 @@ const PortfolioCards = () => {
       <div className='card'>
         <div className='cardInner'>
           <div className='cardFront'>
-            <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547654275/whatToMake.png'/>
-            <p className='appName'>What To Make</p>
+            <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547663810/particle_echo.jpg'/>
+            <p className='appName'>Alexa Fan</p>
           </div>
           <div className='cardBack'>
-            <p>back of card content here</p>
-          </div>
-        </div>
-      </div>
-      <div className='card'>
-        <div className='cardInner'>
-          <div className='cardFront'>
-            <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547654275/whatToMake.png'/>
-            <p className='appName'>What To Make</p>
-          </div>
-          <div className='cardBack'>
-            <p>back of card content here</p>
+            <p>Using the IFTTT service, Alexa, a Particle Photon, some relays and the remote for my ceiling fan,
+            I now have a fan which can be controlled by Alexa! For those who dont know, the Particle Photon is
+            a small wifi development kit.</p>
+            <p className='iconP'><a href='https://github.com/gjbonner/alexa-fan'><i class="cardIcon fab fa-github"></i></a></p>
           </div>
         </div>
       </div>
