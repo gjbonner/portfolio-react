@@ -39,7 +39,7 @@ const PortfolioCards = () => {
       <div className='card'>
         <div className='cardInner'>
           <div className='cardFront'>
-            <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547660673/taskmaster.png'/>
+            <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547678817/taskmaster.png'/>
             <p className='appName'>TaskMaster</p>
           </div>
           <div className='cardBack'>
