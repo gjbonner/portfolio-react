@@ -63,3 +63,23 @@
   background-color: #F5F5F5;
   transform: rotateY(180deg);
 }
+
+.cardIcon {
+  color: #00CED1;
+  font-size: 175%;
+}
+
+.cardIcon:hover{
+  color: black;
+  transition: 0.7s;
+}
+
+.iconP{
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
