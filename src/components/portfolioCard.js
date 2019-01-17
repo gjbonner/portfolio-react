@@ -29,7 +29,7 @@ const PortfolioCards = () => {
           </div>
           <div className='cardBack'>
             <p>Happy is a Vanilla JavaScript game I built as DOM manipulation practice.
-            With a Rails Back End, users names and scores are kept and top 3 high scores of all users are
+            With a Rails Back End, user's names and scores are kept and top 3 high scores of all users are
             displayed. Collect burgers and avoid incoming emojis!
             </p>
             <p className='iconP'><a href='https://github.com/gjbonner/happy_frontend'><i class="cardIcon fab fa-github"></i></a></p>
