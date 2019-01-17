@@ -16,7 +16,7 @@ class App extends Component {
           <Route exact path='/resume' component={ResumeContainer} />
           <Route exact path='/contact' component={ContactContainer} />
           <Route path='/' component={Home} />
-          <Redirect to='/home' />
+          <Redirect to='/' />
         </Switch>
       </Fragment>
     );
