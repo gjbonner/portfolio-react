@@ -62,7 +62,7 @@ class ContactContainer extends Component{
         <div className='contactWrapper'>
         <img className='contactImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547674140/hackathon.png' />
         <div>
-          <h1>I'm always looking for fun project to be a part of!<br/> Want to work together?<br/>Lets get in touch.</h1>
+          <h1>I'm always looking for fun projects to be a part of!<br/> Want to work together?<br/>Lets get in touch.</h1>
           <Form>
             <FormGroup id='name'>
               <ControlLabel>Enter Name</ControlLabel>
