@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:300');
+
+h1{
+  font-family: 'Barlow', sans-sans-serif;
+}
+
 #name, #email {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.contactImg{
+.contactImg {
+  border-radius: 5px;
   display: flex;
   margin: 0 auto;
   height: 300px;

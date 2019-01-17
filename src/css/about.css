@@ -19,6 +19,10 @@ p {
   border-radius: 10px;
 }
 
+#typed {
+  text-align: center;
+}
+
 @media only screen and (max-width: 800px){
   #robot {
     display: none;
