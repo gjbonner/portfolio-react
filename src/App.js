@@ -11,12 +11,11 @@ class App extends Component {
     return (
       <Fragment>
         <Switch>
-          <Route exact path='/home' component={Home} />
           <Route exact path='/portfolio' component={PortfolioContainer} />
           <Route exact path='/resume' component={ResumeContainer} />
           <Route exact path='/contact' component={ContactContainer} />
           <Route path='/' component={Home} />
-          <Redirect to='/home' />
+          <Redirect to='/' />
         </Switch>
       </Fragment>
     );
