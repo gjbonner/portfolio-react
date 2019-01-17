@@ -44,7 +44,13 @@ class ContactContainer extends Component{
       emailjs.send(service_id, template_id, template_params, userID)
       .then(r => {
         console.log('sent', r.text);
-      }).then(this.setState({emailSent: true}))
+      }).then(this.setState({emailSent: true})).then(
+        this.setState({
+          name: '',
+          email: '',
+          message: ''
+        })
+      )
     }
   }
 
@@ -69,6 +75,7 @@ class ContactContainer extends Component{
               <FormControl
               type='text'
               name='name'
+              value={this.state.name}
               onChange={this.handleChange}
               />
             </FormGroup>
@@ -77,6 +84,7 @@ class ContactContainer extends Component{
               <FormControl
               type='email'
               name='email'
+              value={this.state.email}
               onChange={this.handleChange}
               />
             </FormGroup>
@@ -85,6 +93,7 @@ class ContactContainer extends Component{
               <FormControl
               id='msgInput'
               name='message'
+              value={this.state.message}
               componentClass='textarea'
               onChange={this.handleChange}
               />
