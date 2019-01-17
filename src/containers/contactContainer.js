@@ -18,7 +18,6 @@ class ContactContainer extends Component{
     }
   }
 
-
   handleChange = (e) => {
     let name =  e.target.name
     let value =  e.target.value
