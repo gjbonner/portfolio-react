@@ -28,7 +28,7 @@ class ContactContainer extends Component{
 
    handleClick = (e) => {
     e.preventDefault()
-    if(this.state.name === '' || this.state.email === '' || this.state.message === '' || this.state.email.includes('@') === false){
+    if(this.state.name === '' || this.state.email === '' || this.state.message === '' || !this.state.email.includes('@')){
       this.setState({fireError: true})
     } else {
       let template_params = {
