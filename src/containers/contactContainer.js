@@ -44,13 +44,12 @@ class ContactContainer extends Component{
       emailjs.send(service_id, template_id, template_params, userID)
       .then(r => {
         console.log('sent', r.text);
-      }).then(this.setState({emailSent: true})).then(
-        this.setState({
-          name: '',
-          email: '',
-          message: ''
-        })
-      )
+      }).then(this.setState({
+        emailSent: true,
+        name: '',
+        email: '',
+        message: ''
+      }))
     }
   }
 
