@@ -5,7 +5,7 @@ const Resume = () => {
     <div>
     <div className='wrapper'>
       <div>
-        <img className='img' alt='resume' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547570043/resume.jpg'/>
+        <img className='img' alt='resume' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547825501/Resume.jpg'/>
       </div>
     </div>
     </div>
