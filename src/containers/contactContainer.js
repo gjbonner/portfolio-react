@@ -109,7 +109,6 @@ class ContactContainer extends Component{
                   <Button onClick={this.closeModal}>Ok</Button>
                 </Modal.Footer>
               </Modal.Dialog>
-
             </div>
 
             : ''}
