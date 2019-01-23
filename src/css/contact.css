@@ -28,6 +28,7 @@ h1{
 
 #msgInput {
   height:inherit;
+  resize: none;
 }
 
 #submit {
