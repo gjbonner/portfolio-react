@@ -12,7 +12,7 @@ const PortfolioCards = () => {
             <p className='appName'>What To Make</p>
           </div>
           <div className='cardBack'>
-            <p>What to make is a React/Redux application
+            <p className='desc'>What to make is a React/Redux application
             allowing users to search for recipes via ingredient input.
             Users can also save recipes and filter recipes by allergies. Data comes from
             the Yummly API.
@@ -28,7 +28,7 @@ const PortfolioCards = () => {
             <p className='appName'>Happy</p>
           </div>
           <div className='cardBack'>
-            <p>Happy is a Vanilla JavaScript game I built as DOM manipulation practice.
+            <p className='desc'>Happy is a Vanilla JavaScript game I built as DOM manipulation practice.
             With a Rails Back End, user's names and scores are kept and top 3 high scores of all users are
             displayed. Collect burgers and avoid incoming emojis!
             </p>
@@ -43,7 +43,7 @@ const PortfolioCards = () => {
             <p className='appName'>TaskMaster</p>
           </div>
           <div className='cardBack'>
-            <p>TaskMaster is designed to be a repository for chores within a household;
+            <p className='desc'>TaskMaster is designed to be a repository for chores within a household;
             specifically between roommates so that all parties involved can create, read,
             update and delete their chores through CLI</p>
             <p className='iconP'><a href='https://github.com/gjbonner/TaskMaster'><i class="cardIcon fab fa-github"></i></a></p>
@@ -57,7 +57,7 @@ const PortfolioCards = () => {
             <p className='appName'>Car News</p>
           </div>
           <div className='cardBack'>
-            <p>An alexa skill written in Python and the Flask Python micro framework that reads the
+            <p className='desc'>An alexa skill written in Python and the Flask Python micro framework that reads the
             top 10 headlines from r/autonews via the
             Reddit API.
             </p>
@@ -72,7 +72,7 @@ const PortfolioCards = () => {
             <p className='appName'>Alexa Fan</p>
           </div>
           <div className='cardBack'>
-            <p>Using the IFTTT service, Alexa, a Particle Photon, some relays and the remote for my ceiling fan,
+            <p className='desc'>Using the IFTTT service, Alexa, a Particle Photon, some relays and the remote for my ceiling fan,
             I now have a fan which can be controlled by Alexa! For those who dont know, the Particle Photon is
             a small wifi development kit.</p>
             <p className='iconP'><a href='https://github.com/gjbonner/alexa-fan'><i class="cardIcon fab fa-github"></i></a></p>
