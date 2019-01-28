@@ -13,3 +13,9 @@
 body{
   background-color: #F1F9FE;
 }
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    max-width: 95%;
+  }
+}
