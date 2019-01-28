@@ -23,9 +23,10 @@ p {
   text-align: center;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 860px){
   #robot {
-    display: none;
+    width: 90%;
+    height: auto;
   }
 }
 
