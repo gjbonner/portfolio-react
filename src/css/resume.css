@@ -2,6 +2,21 @@ img{
   width: 100%;
 }
 
-iframe {
-  overflow: hidden;
+.resumeWrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 400px) {
+  .resumeWrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
