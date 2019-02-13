@@ -3,6 +3,7 @@
 
 
 h1{
+  padding: 1%;
   font-family: 'Barlow', sans-sans-serif;
 }
 
@@ -43,5 +44,9 @@ h1{
 @media only screen and (max-width: 400px){
   .contactImg{
     display: none;
+  }
+
+  #name, #email, #msg{
+    width: 75%;
   }
 }
