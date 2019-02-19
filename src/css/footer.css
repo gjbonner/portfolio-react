@@ -32,7 +32,7 @@ li{
 
 .icons {
   color: white;
-  font-size: 175%;
+  font-size: 200%;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -72,5 +72,9 @@ li{
     color: white;
     transition: none;
     animation: none;
+  }
+
+  .icons{
+    font-size: 175%;
   }
 }
