@@ -5,7 +5,6 @@
 }
 
 li{
-
   margin: 20px;
   list-style-type: none;
 }
@@ -33,7 +32,7 @@ li{
 
 .icons {
   color: white;
-  font-size: 175%;
+  font-size: 200%;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -52,19 +51,19 @@ li{
 		transform:         translateY(0)
 	}
 	40% {
-		-webkit-transform: translateY(-20px);
-		-ms-transform:     translateY(-20px);
-		transform:         translateY(-20px)
-	}
-	60% {
 		-webkit-transform: translateY(-15px);
 		-ms-transform:     translateY(-15px);
 		transform:         translateY(-15px)
 	}
+	60% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
 }
 .icons:hover{
   color: black;
-  transition: 0.75s;
+  transition: 1s;
   animation-name: bounce;
 }
 
@@ -73,5 +72,9 @@ li{
     color: white;
     transition: none;
     animation: none;
+  }
+
+  .icons{
+    font-size: 175%;
   }
 }
