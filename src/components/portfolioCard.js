@@ -24,6 +24,21 @@ const PortfolioCards = () => {
       <div className='card'>
         <div className='cardInner'>
           <div className='cardFront'>
+            <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1551465454/portfolio.png' />
+            <p className='appName'>This Site</p>
+          </div>
+          <div className='cardBack'>
+            <p className='desc'>I built this site using the React to showcase my portfolio as well as
+            tell others a little about myself! It is hosted on Netlify.
+            </p>
+            <p className='iconP'><a href='https://github.com/gjbonner/portfolio-react'><i class='cardIcon fab fa-github'></i></a></p>
+          </div>
+        </div>
+      </div>
+
+      <div className='card'>
+        <div className='cardInner'>
+          <div className='cardFront'>
             <img className='cardImg' src='https://res.cloudinary.com/dtdt6vcwa/image/upload/v1547658341/happy.png'/>
             <p className='appName'>Happy</p>
           </div>
