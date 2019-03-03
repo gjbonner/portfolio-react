@@ -28,7 +28,7 @@ const PortfolioCards = () => {
             <p className='appName'>This Site</p>
           </div>
           <div className='cardBack'>
-            <p className='desc'>I built this site using React to showcase my portfolio as well as
+            <p className='desc'>I built this fully responsive site using React to showcase my portfolio as well as
             tell others a little about myself! It is hosted on Netlify.
             </p>
             <p className='iconP'><a href='https://github.com/gjbonner/portfolio-react'><i class='cardIcon fab fa-github'></i></a></p>
